@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace LoginProject
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
-            // Form
+            //Form Load
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -29,12 +29,12 @@ namespace LoginProject
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
-            // Username Texbox
+            // Username Textbox
         }
 
         private void Label2_Click(object sender, EventArgs e)
         {
-            // Passowrd Label
+            // Password Label
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -42,15 +42,19 @@ namespace LoginProject
             // Password Textbox
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Label3_Click(object sender, EventArgs e)
         {
-            // Login Button
+            //confirm Label
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+            // Confirm Textbox
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            // Register Button
-
+            // Register Confirm Button
         }
     }
 }
