@@ -12,6 +12,7 @@ namespace LoginProject
 {
     public partial class Form2 : Form
     {
+        string path = @"C:\LOGIN\login.txt";
         public Form2()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace LoginProject
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
             // Username Textbox
+
         }
 
         private void Label2_Click(object sender, EventArgs e)

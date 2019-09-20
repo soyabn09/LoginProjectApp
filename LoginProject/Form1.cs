@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.IO;
 
 namespace LoginProject
 {
@@ -20,6 +22,7 @@ namespace LoginProject
         private void Form1_Load(object sender, EventArgs e)
         {
             // Form
+            StreamWriter writer = new StreamWriter(@"C:\login\login");
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -30,6 +33,7 @@ namespace LoginProject
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
             // Username Texbox
+
         }
 
         private void Label2_Click(object sender, EventArgs e)
