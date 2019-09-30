@@ -14,6 +14,7 @@ namespace LoginProject
 {
     public partial class Form1 : Form
     {
+        Thread th;
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +23,16 @@ namespace LoginProject
         private void Form1_Load(object sender, EventArgs e)
         {
             // Form Loads
+            if (!Directory.Exists("C:\\LOGIN"))
+            {
+                Directory.CreateDirectory("C:\\LOGIN");
+            }
 
+        }
+
+        private void REGISTER(object obj)
+        {
+            Application.Run(new Form2());
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -53,10 +63,12 @@ namespace LoginProject
         {
             // Login Button
 
-            if(!File.Exists(@"C:\TEST INC\login.txt")) // Check if the file exists
+            if(!File.Exists(@"C:\LOGIN\login.txt")) // Check if the file exists
             {
-                // Send to Register Form
-
+                this.Close();
+                th = new Thread(REGISTER);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
             }
         }
 
